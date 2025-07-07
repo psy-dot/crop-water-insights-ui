@@ -27,8 +27,8 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Home</Link>
             <Link to="/dashboard" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Dashboard</Link>
-            <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors duration-200">About</a>
-            <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Contact</a>
+            <Link to="/about" className="text-gray-700 hover:text-green-600 transition-colors duration-200">About</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Contact</Link>
             
             {/* Theme Switcher */}
             <Button
@@ -66,8 +66,8 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-green-100">
               <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Home</Link>
               <Link to="/dashboard" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Dashboard</Link>
-              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">About</a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Contact</a>
+              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">About</Link>
+              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Contact</Link>
             </div>
           </div>
         )}
