@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X, Sun, Moon, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,15 +18,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <Droplets className="h-8 w-8 text-green-600" />
             <span className="text-xl font-bold text-gray-900">Crop Water Advisor</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Home</a>
-            <a href="#dashboard" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Dashboard</a>
+            <Link to="/" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Home</Link>
+            <Link to="/dashboard" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Dashboard</Link>
             <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors duration-200">About</a>
             <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Contact</a>
             
@@ -63,8 +64,8 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-green-100">
-              <a href="#home" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Home</a>
-              <a href="#dashboard" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Dashboard</a>
+              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Home</Link>
+              <Link to="/dashboard" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Dashboard</Link>
               <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">About</a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-md transition-colors duration-200">Contact</a>
             </div>
